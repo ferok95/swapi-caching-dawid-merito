@@ -38,7 +38,7 @@ jobs:
     displayName: Run Docker-compose-up
     inputs:
       containerregistrytype: Container Registry
-      dockerComposeFile: ~/merito-labs/swapi-caching-dawid-merito/docker-compose.yaml
+      dockerComposeFile: $(Build.SourcesDirectory)/docker-compose.yaml
       dockerComposeCommand: 'up -d'
 
   - task: CmdLine@2
