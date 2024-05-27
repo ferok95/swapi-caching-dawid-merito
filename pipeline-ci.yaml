@@ -23,10 +23,10 @@ jobs:
   displayName: Build
   steps:
 
-#  - task: CmdLine@2
-#   displayName: 'Move .env file'
-#    inputs:
-#      script: mv $(Build.SourcesDirectory)/.env.example $(Build.SourcesDirectory)/.env
+  - task: CmdLine@2
+    displayName: 'Move .env file'
+    inputs:
+      script: mv $(Build.SourcesDirectory)/.env.example $(Build.SourcesDirectory)/.env
 
 ## Sekcja Artifacts i NPM
   - task: npmAuthenticate@0
